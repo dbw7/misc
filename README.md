@@ -16,3 +16,30 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/hel
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/purge-helm-apache-user-auth-ubuntu.sh)"
 ```
+
+## OCI Helm repo with user authentication using docker registry
+### Init
+```bash
+mkdir auth
+htpasswd -Bcb auth/htpasswd user root
+```
+```bash
+docker run -d \
+  -p 5000:5000 \
+  --name registry \
+  -v "$(pwd)"/auth:/auth \
+  -e "REGISTRY_AUTH=htpasswd" \
+  -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \
+  -e "REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd" \
+  registry:2.7
+```
+### Use
+```bash
+helm registry login IP:5000 --insecure
+
+```
+### Cleanup
+```
+docker stop registry
+docker rm registry
+```
