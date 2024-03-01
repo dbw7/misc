@@ -1,12 +1,17 @@
 #!/bin/bash
 
-set -e
-set -o pipefail
+# Function to execute command and echo on failure
+execute_and_echo() {
+    if ! "$@"; then
+        echo "Command failed: $*"
+    fi
+}
 
-sudo rm -r /var/www/html/helm-charts
-sudo rm -r /etc/apache2/sites-available
+execute_and_echo sudo rm -r /etc/apache2/
+execute_and_echo sudo rm -r /var/www/html/helm-charts
 
-sudo apt --purge remove apache2 -y
-sudo apt autoremove -y
+execute_and_echo sudo apt --purge remove apache2 -y
+execute_and_echo sudo apt autoremove -y
 
-helm repo remove rancher-latest
+
+execute_and_echo helm repo remove rancher-latest
