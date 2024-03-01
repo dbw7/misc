@@ -12,13 +12,13 @@ helm
 First script
 This sets up the dirs and apache with user auth
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/apache-user-auth.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth-insecure/apache-user-auth.sh)"
 ```
 
 Second script
 This adds rancher and apache and indexes the repo
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/populate-apache-helm.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth-insecure/populate-apache-helm.sh)"
 ```
 
 when all of this works, you should be able to do:
@@ -51,5 +51,5 @@ helm pull local-repo/apache
 
 ## Purge
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/purge-helm-apache-user-auth-ubuntu.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth-insecure/purge-helm-apache-user-auth-ubuntu.sh)"
 ```
