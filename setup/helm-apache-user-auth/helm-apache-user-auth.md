@@ -42,6 +42,13 @@ entries:
       licenses: Apache-2.0...
 ```
 
+## Follow up commands
+```
+helm repo add local-repo http://YOUR-IP:8092 --username user --password root
+helm pull local-repo/rancher
+helm pull local-repo/apache
+```
+
 ## Purge
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/purge-helm-apache-user-auth-ubuntu.sh)"
