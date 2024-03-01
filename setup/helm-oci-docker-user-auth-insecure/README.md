@@ -15,5 +15,11 @@ Usage
 ```
 curl -u "user:root" http://YOUR-IP:5000/v2/_catalog"
 
-helm registry login YOUR-IP:5000 --insecure
+helm pull oci://192.168.1.185:5000/rancher/rancher --plain-http
+helm pull oci://192.168.1.185:5000/apache/apache --plain-http
+```
+
+Good to know
+```
+helm registry login http://YOUR-IP:5000 --insecure
 ```

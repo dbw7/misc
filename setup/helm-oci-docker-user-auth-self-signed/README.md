@@ -13,7 +13,12 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/hel
 
 Usage
 ```
-curl -k -u "user:root" http://YOUR-IP:5000/v2/_catalog"
+curl -k -u "user:root" https://YOUR-IP:5000/v2/_catalog"
 
-helm registry login YOUR-IP:5000 --insecure
+helm pull oci://192.168.1.185:5000/rancher/rancher --insecure-skip-tls-verify
+helm pull oci://192.168.1.185:5000/apache/apache --insecure-skip-tls-verify
+```
+Good to know
+```
+helm registry login https://YOUR-IP:5000 --insecure
 ```
