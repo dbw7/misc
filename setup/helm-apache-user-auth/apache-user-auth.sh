@@ -40,7 +40,7 @@ sudo tee /etc/apache2/sites-available/helm-charts.conf <<'EOF' > /dev/null
 </VirtualHost>
 EOF
 
-echo "Listen 8092" >> /etc/apache2/ports.conf
+echo "Listen 8092" | sudo tee -a /etc/apache2/ports.conf > /dev/null
 
 sudo mkdir -p /var/www/html/helm-charts
 
