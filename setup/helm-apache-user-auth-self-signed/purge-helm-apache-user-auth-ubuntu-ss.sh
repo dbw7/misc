@@ -19,3 +19,4 @@ execute_and_echo sudo apt autoremove -y
 
 
 execute_and_echo helm repo remove rancher-latest
+execute_and_echo helm repo remove local-repo
