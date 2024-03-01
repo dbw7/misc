@@ -45,8 +45,8 @@ entries:
 ## Follow up commands
 ```
 helm repo add local-repo https://YOUR-IP:8092 --username user --password root --insecure-skip-tls-verify
-helm pull local-repo/rancher
-helm pull local-repo/apache
+helm pull local-repo/rancher --insecure-skip-tls-verify
+helm pull local-repo/apache --insecure-skip-tls-verify
 ```
 
 ## Purge
