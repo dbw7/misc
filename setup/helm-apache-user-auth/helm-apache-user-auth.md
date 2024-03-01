@@ -41,3 +41,8 @@ entries:
           image: docker.io/bitnami/git:2.43.2-debian-12-r1
       licenses: Apache-2.0...
 ```
+
+## Purge
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/helm-apache-user-auth/purge-helm-apache-user-auth-ubuntu.sh)"
+```

@@ -12,3 +12,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/helm-apac
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/helm-apache-user-auth/populate-apache-helm.sh)"
 ```
+### Purge
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/helm-apache-user-auth/purge-helm-apache-user-auth-ubuntu.sh)"
+```
