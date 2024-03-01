@@ -2,8 +2,12 @@
 
 # Function to execute command and echo on failure
 execute_and_echo() {
-    if ! "$@"; then
+    output=$("$@" 2>&1)
+    result=$?
+    if [ $result -ne 0 ]; then
         echo "Command failed: $*"
+        echo "Output:"
+        echo "$output"
     fi
 }
 
