@@ -20,7 +20,7 @@ sudo mkdir -p /etc/apache2/.htpasswd_files
 sudo htpasswd -Bcb /etc/apache2/.htpasswd_files/helm.httpasswd user root
 
 
-sudo cat << EOF > /etc/apache2/sites-available/helm-charts.conf
+sudo tee /etc/apache2/sites-available/helm-charts.conf <<'EOF' > /dev/null
 <VirtualHost *:8092>
     ServerAdmin webmaster@localhost
     DocumentRoot /var/www/html/helm-charts
@@ -46,7 +46,7 @@ sudo mkdir -p /var/www/html/helm-charts
 
 # For some reason, it doesn't ask for authentication without this
 sudo mkdir -p /var/www/html/helm-charts
-sudo cat << EOF > /var/www/html/helm-charts/.htaccess
+sudo tee /var/www/html/helm-charts/.htaccess <<'EOF' > /dev/null
 AuthType Basic
 AuthName "Restricted Content"
 AuthUserFile /etc/apache2/.htpasswd_files/helm.httpasswd
