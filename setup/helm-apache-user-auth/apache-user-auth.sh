@@ -57,7 +57,7 @@ EOF
 # Disable default site
 sudo a2dissite 000-default
 
-sudo a2ensite /etc/apache2/sites-available/helm-charts.conf
+sudo a2ensite helm-charts
 sudo systemctl reload apache2
 sudo systemctl restart apache2
 
