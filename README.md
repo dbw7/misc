@@ -6,13 +6,13 @@
 ## [Larger Readme](./setup/helm-apache-user-auth/helm-apache-user-auth.md)
 ### First script
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/helm-apache-user-auth/apache-user-auth.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/apache-user-auth.sh)"
 ```
 ### Second script
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/helm-apache-user-auth/populate-apache-helm.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/populate-apache-helm.sh)"
 ```
-### Purge
+### Purge, this uninstalls apache2
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/helm-apache-user-auth/purge-helm-apache-user-auth-ubuntu.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/purge-helm-apache-user-auth-ubuntu.sh)"
 ```
