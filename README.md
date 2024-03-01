@@ -4,15 +4,15 @@
  
 ## HTTP Helm repo with user authentication using Apache
 ## [Larger Readme](./setup/helm-apache-user-auth/helm-apache-user-auth.md)
-### First script
+### First script (Ubuntu/SUSE)
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/apache-user-auth.sh)"
 ```
-### Second script
+### Second script (Ubuntu/SUSE)
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/populate-apache-helm.sh)"
 ```
-### Purge, this uninstalls apache2
+### Purge, this uninstalls apache2 (Ubuntu)
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-apache-user-auth/purge-helm-apache-user-auth-ubuntu.sh)"
 ```

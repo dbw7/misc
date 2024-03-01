@@ -4,6 +4,18 @@ set -e
 
 set -o pipefail
 
+# Check for Apache (apache2)
+if ! type apache2 >/dev/null 2>&1; then
+    echo "Apache is not installed. Exiting."
+    exit 1
+fi
+
+# Check for Helm
+if ! type helm >/dev/null 2>&1; then
+    echo "Helm is not installed. Exiting."
+    exit 1
+fi
+
 sudo mkdir -p /etc/apache2/.htpasswd_files
 sudo htpasswd -Bcb /etc/apache2/.htpasswd_files/helm.httpasswd user root
 
