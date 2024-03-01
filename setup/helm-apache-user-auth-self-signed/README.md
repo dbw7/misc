@@ -23,7 +23,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/hel
 
 when all of this works, you should be able to do:
 ```
-curl -k -u "user:root" https://192.168.1.185:8092/index.yaml
+curl -k -u "user:root" https://YOUR-IP:8092/index.yaml
 ```
 And see an output that starts with something similar:
 ```yaml
