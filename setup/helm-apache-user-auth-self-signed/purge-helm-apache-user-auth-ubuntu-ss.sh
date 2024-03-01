@@ -16,6 +16,7 @@ execute_and_echo sudo rm -r /var/www/html/helm-charts
 
 execute_and_echo sudo apt --purge remove apache2 -y
 execute_and_echo sudo apt autoremove -y
+execute_and_echo sudo apt install apache2 -y
 
 
 execute_and_echo helm repo remove rancher-latest
