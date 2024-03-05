@@ -1,14 +1,14 @@
 ### First script (Ubuntu/SUSE)
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-oci-docker-user-auth-self-signed/helm-oci-docker-user-auth-ss.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-docker-registries/helm-oci-docker-user-auth-self-signed/helm-oci-docker-user-auth-ss.sh)"
 ```
 ### Second script (Ubuntu/SUSE)
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-oci-docker-user-auth-self-signed/populate-helm-oci-docker-user-auth-ss.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-docker-registries/helm-oci-docker-user-auth-self-signed/populate-helm-oci-docker-user-auth-ss.sh)"
 ```
 ### Purge, this uninstalls apache2 (Ubuntu)
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-oci-docker-user-auth-self-signed/purge-helm-oci-docker-user-auth-ss.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-docker-registries/helm-oci-docker-user-auth-self-signed/purge-helm-oci-docker-user-auth-ss.sh)"
 ```
 
 Usage

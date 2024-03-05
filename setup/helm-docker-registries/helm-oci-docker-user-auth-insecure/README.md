@@ -1,14 +1,14 @@
 ### First script (Ubuntu/SUSE)
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-oci-docker-user-auth-insecure/helm-oci-docker-user-auth.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-docker-registries/helm-oci-docker-user-auth-insecure/helm-oci-docker-user-auth.sh)"
 ```
 ### Second script (Ubuntu/SUSE)
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-oci-docker-user-auth-insecure/populate-helm-oci-docker-user-auth.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-docker-registries/helm-oci-docker-user-auth-insecure/populate-helm-oci-docker-user-auth.sh)"
 ```
 ### Purge, this uninstalls apache2 (Ubuntu)
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-oci-docker-user-auth-insecure/purge-helm-oci-docker-user-auth.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dbw7/misc/main/setup/helm-docker-registries/helm-oci-docker-user-auth-insecure/purge-helm-oci-docker-user-auth.sh)"
 ```
 
 Usage
