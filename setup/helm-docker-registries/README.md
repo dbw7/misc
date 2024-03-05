@@ -2,6 +2,8 @@
 
 ## Apache
 
+### [Insecure Apache helm repository Readme](./apache/helm-apache-insecure/README.md)
+
 ### [Insecure Apache user:pass helm repository Readme](./apache/helm-apache-user-auth-insecure/README.md)
 
 ### [Self signed Apache user:pass helm repository Readme](./apache/helm-apache-user-auth-self-signed/README.md)
