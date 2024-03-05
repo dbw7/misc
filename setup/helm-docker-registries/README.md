@@ -2,15 +2,15 @@
 
 ## Apache
 
-### [Insecure Apache user:pass helm repository Readme](./helm-apache-user-auth-insecure/README.md)
+### [Insecure Apache user:pass helm repository Readme](./apache/helm-apache-user-auth-insecure/README.md)
 
-### [Self signed Apache user:pass helm repository Readme](./helm-apache-user-auth-self-signed/README.md)
+### [Self signed Apache user:pass helm repository Readme](./apache/helm-apache-user-auth-self-signed/README.md)
 
 
 ## Docker registry container
 
-### [Insecure Docker registry user:pass Readme](./helm-oci-docker-user-auth-insecure/README.md)
+### [Insecure Docker registry user:pass Readme](./docker-registry/helm-oci-docker-user-auth-insecure/README.md)
 
-### [Self signed Docker registry user:pass Readme](./helm-oci-docker-user-auth-self-signed/README.md)
+### [Self signed Docker registry user:pass Readme](./docker-registry/helm-oci-docker-user-auth-self-signed/README.md)
 
 

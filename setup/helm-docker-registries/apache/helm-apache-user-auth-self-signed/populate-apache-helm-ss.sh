@@ -17,4 +17,4 @@ read ip_address
 sudo helm repo index . --url "https://$ip_address:8092/"
 
 echo "Complete, Try:
-curl -u -k \"user:root\" https://$ip_address:8092/index.yaml"
+curl -k -u \"user:root\" https://$ip_address:8092/index.yaml"
