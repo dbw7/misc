@@ -20,7 +20,7 @@ read ip_address
 
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -keyout ~/dockerconf/ssl/docker.key -out ~/dockerconf/ssl/docker.crt \
-    -subj "/C=US/ST=Random/L=Random/O=Dis/CN=$ip_address"
+    -subj "/C=US/ST=Random/L=Random/O=Dis/CN=$ip_address" \
     -addext "subjectAltName=IP:$ip_address"
     
 sudo htpasswd -Bcb ~/dockerconf/docker.pass user root
