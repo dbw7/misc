@@ -24,6 +24,7 @@ read ip_address
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt \
     -subj "/C=US/ST=Random/L=Random/O=Dis/CN=$ip_address"
+    -addext "subjectAltName=IP:$ip_address"
 
 sudo mkdir -p /etc/apache2/.htpasswd_files
 sudo htpasswd -Bcb /etc/apache2/.htpasswd_files/helm.httpasswd user root
