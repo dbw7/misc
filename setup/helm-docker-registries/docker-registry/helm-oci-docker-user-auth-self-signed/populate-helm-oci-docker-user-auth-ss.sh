@@ -22,8 +22,8 @@ read ip_address
 
 helm registry login https://$ip_address:5000 --username user --password root --insecure
 
-helm push rancher-2.*.tgz oci://$ip_address:5000/rancher --insecure-skip-tls-verify
-helm push apache-*.tgz oci://$ip_address:5000/apache --insecure-skip-tls-verify
+helm push rancher-2.*.tgz oci://$ip_address:5000/charts --insecure-skip-tls-verify
+helm push apache-*.tgz oci://$ip_address:5000/charts --insecure-skip-tls-verify
 
 echo "Complete, try:
 curl -k -u "user:root" https://$ip_address:5000/v2/_catalog"
